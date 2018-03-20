@@ -58,15 +58,23 @@ void fill_vect (std::vector<int> &vect){
 
 void selection_sort(std::vector<int> &vect){
   int temp;
+  int tracker;
     for(int x = 0; x <vect.size(); ++x){
+       min = vect.at(x)
+        tracker = x;
       for (int y = x + 1; y < vect.size(); ++y){
-        if (vect.at(x) > vect.at(y)){
-          temp = vect.at(x);
-          vect.at(x) = vect.at(y);
-          vect.at(y) = temp;
+          if (min > vect.at(y){
+            min = vect.at(y);
+            tracker = y;
         }
       }
-    }
+          if (min != vect.at(x)){
+          temp = vect.at(x);
+          vect.at(x) = vect.at(tracker);
+          vect.at(tracker) = temp;
+          
+          }
+      }
 
 }
 
